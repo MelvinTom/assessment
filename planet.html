@@ -1,0 +1,27 @@
+<html>
+<body background="planet.jpg">
+<form id="Planet">
+<select id="select">
+<option>Mercury</option>
+<option>Venus</option>
+<option>Earth</option>
+<option>Mars</option>
+<option>Ceres</option>
+<option>Jupiter</option>
+<option>Saturn</option>
+<option>Pluto</option>
+<option>Haumea</option>
+<option>Makemake</option>
+<option>Eris</option>
+</select>
+<input type="button" onclick="display()" value="Click">
+</form>
+<p>Select the favourite planet</p>
+<script>
+function display(){
+var obj = document.getElementById("select");
+document.write(obj.options[obj.selectedIndex].text);
+}
+</script>
+</body>
+</html>
